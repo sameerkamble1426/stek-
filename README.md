@@ -1,0 +1,2 @@
+# stek-
+my typing project
