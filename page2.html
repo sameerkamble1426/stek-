@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .footer {
+            text-align: center;
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            background-color: rgb(255, 252, 252);
+            color: hsl(0, 0%, 0%);
+        }
+        
+        .btn {
+            display: inline-block;
+            padding: 15px 25px;
+            font-size: 20px;
+            cursor: pointer;
+            text-align: center;
+            text-decoration: none;
+            outline: none;
+            color: #fff;
+            background-color: rgb(12, 86, 199);
+            border: none;
+            border-radius: 15px;
+            box-shadow: 0 9px #999;
+        }
+        
+        .btn:hover {
+            background-color: #21b4ce;
+            color: black;
+        }
+        
+        .btn:active {
+            background-color: #11e4f3;
+            box-shadow: 0 5px #666;
+            transform: translateY(4px);
+        }
+    </style>
+</head>
+<body>
+    <body>
+        <h1 style="background-color:powderblue;">Other Important Instruction</h1>
+        <p>The instructions are not available in the chosen language.</p>
+    </body>
+    <form id="myForm">
+        <div class="footer">
+            <hr><input type="checkbox" id="myCheckbox"> I have read and understood the instructions. All computer hardware allotted to me are in proper working condition. I declare that I am not in possession of / not carrying any prohibited gadge like mobile
+            phone, bluetooth devices etc. /any prohibited material with me into the Examination Hall. I shall be liable to be debarred from this Test and to disciplinary action, which may include ban from future Tests / Examinations<br>
+            <br>
+            <button type="button" class="btn" id="submitButton" onclick="location.href='file:///E:/stek%20typing%20master/page3.html'" disabled>Submit</button>
+            <br>
+        </div>
+    </form>
+    <script>
+        document.getElementById('myCheckbox').addEventListener('change', function() {
+            var submitButton = document.getElementById('submitButton');
+            submitButton.disabled = !this.checked;
+        });
+    </script>
+</body>
+</html>
